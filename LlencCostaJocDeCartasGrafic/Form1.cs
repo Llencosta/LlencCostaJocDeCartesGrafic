@@ -51,9 +51,9 @@ namespace LlencCostaJocDeCartasGrafic
         private void actualitzarLista()
         {
             ListaDeCartas.Items.Clear();
-            for (int i = 0; i < baraja.getBaraja.Count; i++)
+            for (int i = 0; i < baraja.baraja.Count; i++)
             {
-                ListaDeCartas.Items.Add(baraja.getBaraja[i].ToString());
+                ListaDeCartas.Items.Add(baraja.baraja[i].ToString());
             }
         }
     }

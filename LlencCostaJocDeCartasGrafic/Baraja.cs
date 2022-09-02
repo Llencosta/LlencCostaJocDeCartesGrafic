@@ -5,10 +5,8 @@ namespace LlencCostaJocDeCartasGrafic
 {
 	class Baraja
 	{
-		List<Carta> baraja = new List<Carta>();
+		public List<Carta> baraja = new List<Carta>();
 		Carta naype;
-
-        public List<Carta> getBaraja { get => baraja; set => baraja = value; }
 
         public Baraja()
 		{
@@ -52,7 +50,7 @@ namespace LlencCostaJocDeCartasGrafic
 		public void Barajar()
 		{
             List<Carta> barajaTemporal = new List<Carta>();
-            for (int i = 0; i < baraja.Count; i++)
+            for (int i = 0; i < 48; i++)
 			{
                 Random rand = new Random();
                 int cartaEsCojida = rand.Next(baraja.Count);
