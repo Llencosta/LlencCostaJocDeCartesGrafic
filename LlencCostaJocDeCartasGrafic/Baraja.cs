@@ -49,8 +49,9 @@ namespace LlencCostaJocDeCartasGrafic
         }
 		public void Barajar()
 		{
+			int ncartas = baraja.Count;
             List<Carta> barajaTemporal = new List<Carta>();
-            for (int i = 0; i < 48; i++)
+            for (int i = 0; i < ncartas; i++)
 			{
                 Random rand = new Random();
                 int cartaEsCojida = rand.Next(baraja.Count);
